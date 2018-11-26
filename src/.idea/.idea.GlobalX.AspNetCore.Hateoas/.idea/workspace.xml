@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fd56dec-f861-4e9f-9a11-dbb924a4b617" name="Default Changelist" comment="" />
+    <list default="true" id="2fd56dec-f861-4e9f-9a11-dbb924a4b617" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.circleci/config.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,12 +365,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543228035043</updated>
-      <workItem from="1543228038868" duration="4411000" />
+      <workItem from="1543228038868" duration="5746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4411000" />
+    <option name="totallyTimeSpent" value="5746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
