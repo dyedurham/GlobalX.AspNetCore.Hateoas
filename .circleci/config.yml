@@ -5,6 +5,7 @@ jobs:
       - image:  microsoft/aspnetcore-build:2.0
     steps:
       - checkout
-      - run: find .
+      - run: cd src
       - run: dotnet restore
       - run: dotnet publish -C Release
+      - run: cd GlobalX.AspNetCore.Hateoas.Siren
