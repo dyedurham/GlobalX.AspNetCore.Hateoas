@@ -9,7 +9,7 @@ jobs:
       - run: cd src
       - run: dotnet restore
       - run: dotnet publish -C Release
-  build:
+  pack:
     working_directory: ~/src/GlobalX.AspNetCore.Hateoas.Siren
     docker:
       - image:  microsoft/aspnetcore-build:2.0
