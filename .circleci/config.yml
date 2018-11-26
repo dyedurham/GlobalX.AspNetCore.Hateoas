@@ -1,21 +1,14 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/src
+    working_directory: ~/
     docker:
       - image:  microsoft/aspnetcore-build:2.0
     steps:
       - checkout
-      - run: cd src
-      - run: dotnet restore
-      - run: dotnet publish -C Release
-  pack:
-    working_directory: ~/src/GlobalX.AspNetCore.Hateoas.Siren
-    docker:
-      - image:  microsoft/aspnetcore-build:2.0
-    steps:
-      - checkout
-      - run: cd src
-      - run: dotnet restore
-      - run: dotnet publish -C Release
-      - run: dotnet pack --include-symbols --include-source -c Release /p:Version=1.0.0 
+      - run: 
+          command: dotnet restore
+          working_directory: ~/src
+      - run: 
+          command: dotnet publish -C Release
+          working_directory: ~/src
