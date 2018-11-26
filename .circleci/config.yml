@@ -9,8 +9,8 @@ jobs:
           command: dotnet restore
           working_directory: src
       - run: 
-          command: dotnet pack --include-symbols --include-source -c Release /p:Version=0.1.0
+          command: dotnet pack --include-symbols --include-source -c Release /p:Version=0.1.0 -o ./nuget
           working_directory: src/GlobalX.AspNetCore.Hateoas.Siren
       - run:
-          working_directory: src/GlobalX.AspNetCore.Hateoas.Siren
-          command: echo 'dotnet nuget push -k $NUGET_KEY'  
+          working_directory: src/GlobalX.AspNetCore.Hateoas.Siren/nuget/
+          command: echo 'dotnet nuget push -k $NUGET_KEY' -s https://api.nuget.org/v3/index.json
