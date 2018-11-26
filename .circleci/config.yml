@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: 
           command: dotnet restore
-          working_directory: ~/src
+          working_directory: src
       - run: 
           command: dotnet publish -C Release
-          working_directory: ~/src
+          working_directory: src
